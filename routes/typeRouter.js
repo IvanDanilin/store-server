@@ -3,6 +3,7 @@ const router = new Router();
 const typeController = require("../controllers/typeController");
 
 router.post("/", typeController.create);
+router.delete('/:id', typeController.deleteOne)
 router.get("/", typeController.getAll);
 
 module.exports = router;
